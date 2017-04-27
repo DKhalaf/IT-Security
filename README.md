@@ -1,6 +1,6 @@
-# IT-Security
+##### IT-Security
 
-### Week 16 - Workpack A [Set up graphite on apache2 using Ubuntu Server v. 14.04.5]
+#### Week 16 - Workpack A [Set up graphite on apache2 using Ubuntu Server v. 14.04.5]
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-graphite-on-an-ubuntu-14-04-server
 
 # Install Ubuntu Server 14.04.05 in VMware
@@ -8,22 +8,22 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-graphite
 1) `sudo apt-get update`
 2) `sudo apt-get install graphite-web graphite-carbon`
 
-## Configure a Database for Django
+### Configure a Database for Django
 # Install PostgreSQL Components
 3) `sudo apt-get install postgresql libpq-dev python-psycopg2`
 
-# Create a Database user and a Database
+### Create a Database user and a Database
 
 4) `sudo -u postgres psql`
 
-* Create a user
+# Create a user
 5) `CREATE USER graphite WITH PASSWORD 'password';`
-* Create a database
+# Create a database
 6) `CREATE DATABASE graphite WITH OWNER graphite;`
-* Exit out of PostgreSQL session
+# Exit out of PostgreSQL session
 7) `\q`
 
-# Open Graphite web app configuration file:
+### Open Graphite web app configuration file:
 8) `sudo nano /etc/graphite/local_settings.py`
 
 # Inside the file, edit following:
@@ -48,7 +48,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-graphite
 # Edit the file:
 * ENABLE_LOGROTATION = True
 
-# Configure Storage Schemas
+### Configure Storage Schemas
 17) `sudo nano /etc/carbon/storage-schemas.conf`
 
 # Add following before the "[default_1min_for_1day]" section
@@ -62,7 +62,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-graphite
 # Start Carbon
 19) `sudo service carbon-cache start`
 
-# Install and Configure Apache
+### Install and Configure Apache
 20) `sudo apt-get install apache2 libapache2-mod-wsgi`
 # Disable the default virtual host since it will conflict with our new file
 21) `sudo a2dissite 000-default`
