@@ -80,6 +80,7 @@
 ![graph](https://cloud.githubusercontent.com/assets/23449056/25485381/08cc03ce-2b5e-11e7-887f-a3ace23e0009.PNG)
 
 
-### Echo request to view the graphs
-# You can send some echo request from the servers terminal to view the graphs.
+
+# You can send some echo request from the servers terminal to view changes in your graphs.
+# You can also specify on the graphs, a timeline for monitoring data
 
