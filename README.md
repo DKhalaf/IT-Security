@@ -40,3 +40,12 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-graphite
         'PORT': ''
     }
 }
+
+# Sync the Database
+13) `sudo graphite-manage syncdb`
+
+# Configure Carbon
+14) `sudo nano /etc/default/graphite-carbon`
+
+# Inside the file, edit:
+* CARBON_CACHE_ENABLED=true
