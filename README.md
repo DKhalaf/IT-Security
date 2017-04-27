@@ -30,17 +30,9 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-graphite
 9) * SECRET_KEY = 'a_salty_string'
 10) * TIME_ZONE = 'Europe/Copenhagen'
 11) * USE_REMOTE_USER_AUTHENTICATION = True
-12) * DATABASES = {
-    'default': {
-        'NAME': 'graphite',
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'USER': 'graphite',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': ''
-    }
-}
 
+# In the same file, type in your database information:
+![databases](https://cloud.githubusercontent.com/assets/23449056/25485387/0db0b204-2b5e-11e7-87a3-ac050c493ed3.PNG)
 # Sync the Database
 13) `sudo graphite-manage syncdb`
 
@@ -84,3 +76,4 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-graphite
 
 ### Verification: Go to your ubuntu client in VMWare, and type:
 * http://ServerIP
+![graph](https://cloud.githubusercontent.com/assets/23449056/25485381/08cc03ce-2b5e-11e7-887f-a3ace23e0009.PNG)
