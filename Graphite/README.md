@@ -9,7 +9,7 @@
 ### ________________________________________________________________________________________________
 ### ________________________________________________________________________________________________
 
-# Install Graphite
+### Install Graphite
 1) `sudo apt-get update`
 2) `sudo apt-get install graphite-web graphite-carbon`
 
@@ -86,6 +86,6 @@
 ### ________________________________________________________________________________________________
 ### ________________________________________________________________________________________________
 
-## You can send some echo request from the servers terminal to view changes in your graphs.
-## You can also specify on the graphs, a timeline for monitoring data
+#### You can send some echo request from the servers terminal to view changes in your graphs.
+#### You can also specify on the graphs, a timeline for monitoring data
 
