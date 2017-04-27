@@ -78,3 +78,8 @@
 ### Verification: Go to your ubuntu client in VMWare, and type:
 * http://ServerIP
 ![graph](https://cloud.githubusercontent.com/assets/23449056/25485381/08cc03ce-2b5e-11e7-887f-a3ace23e0009.PNG)
+
+
+### Echo request to view the graphs
+# You can send some echo request from the servers terminal to view the graphs.
+
