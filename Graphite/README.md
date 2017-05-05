@@ -57,26 +57,26 @@
 17) `sudo nano /etc/carbon/storage-schemas.conf`
 
 ### Add following before the "[default_1min_for_1day]" section
-  * [test]
-*   pattern = ^test\.
-* retentions = 10s:10m,1m:1h,10m:1d
+18) * [test]
+19) * pattern = ^test\.
+20) * retentions = 10s:10m,1m:1h,10m:1d
 
 ### Copy the file into another directory
-18) `sudo cp /usr/share/doc/graphite-carbon/examples/storage-aggregation.conf.example /etc/carbon/storage-aggregation.conf`
+21) `sudo cp /usr/share/doc/graphite-carbon/examples/storage-aggregation.conf.example /etc/carbon/storage-aggregation.conf`
 
 ### Start Carbon
-19) `sudo service carbon-cache start`
+22) `sudo service carbon-cache start`
 
 ### Install and Configure Apache
-20) `sudo apt-get install apache2 libapache2-mod-wsgi`
+23) `sudo apt-get install apache2 libapache2-mod-wsgi`
 ### Disable the default virtual host since it will conflict with our new file
-21) `sudo a2dissite 000-default`
+24) `sudo a2dissite 000-default`
 ### Copy the Graphite Apache virtual host file into the available sites directory
-22) `sudo cp /usr/share/graphite-web/apache2-graphite.conf /etc/apache2/sites-available`
+25) `sudo cp /usr/share/graphite-web/apache2-graphite.conf /etc/apache2/sites-available`
 ### Enable the virtual host
-23) `sudo a2ensite apache2-graphite`
+26) `sudo a2ensite apache2-graphite`
 ### Reload the service to implement the changes
-24) `sudo service apache2 reload`
+27) `sudo service apache2 reload`
 
 
 ### Verification: Go to your ubuntu client in VMWare, and type:
