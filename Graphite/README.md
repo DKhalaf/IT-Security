@@ -57,9 +57,9 @@
 17) `sudo nano /etc/carbon/storage-schemas.conf`
 
 ### Add following before the "[default_1min_for_1day]" section
-[test]
-pattern = ^test\.
-retentions = 10s:10m,1m:1h,10m:1d
+* [test]
+* pattern = ^test\.
+* retentions = 10s:10m,1m:1h,10m:1d
 
 ### Copy the file into another directory
 18) `sudo cp /usr/share/doc/graphite-carbon/examples/storage-aggregation.conf.example /etc/carbon/storage-aggregation.conf`
